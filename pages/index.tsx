@@ -13,7 +13,7 @@ export default function home() {
         fetchData();
     }, []);//第二引数に[]を渡す事で、useEffectフックの中の処理は初期レンダリング時のみ実行
 
-    //取得したデータを表示
+    //取得したデータを表字
     return (
         <div>
             {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
